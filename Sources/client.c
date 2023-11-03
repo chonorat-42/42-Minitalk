@@ -6,7 +6,7 @@
 /*   By: chonorat <chonorat@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 16:27:44 by chonorat          #+#    #+#             */
-/*   Updated: 2023/09/25 13:47:46 by chonorat         ###   ########.fr       */
+/*   Updated: 2023/09/27 18:30:45 by chonorat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static void	send_endsig(int pid)
 	{
 		kill(pid, SIGUSR2);
 		index++;
-		usleep(400);
+		usleep(500);
 	}
 }
 
@@ -77,7 +77,8 @@ int	main(int argc, char *argv[])
 		if (!check_pid(argv[1], &pid))
 			return (ft_putendl_fd("Wrong PID format.", 1), 2);
 		if (!send_to_server(argv[2], pid))
-			return (ft_putendl_fd("Failure in attempting to send signals.", 1), 3);
+			return (ft_putendl_fd("Failure in attempting to send signals.", 1),
+				3);
 	}
 	else
 		return (ft_putendl_fd("USAGE: ./client 'pid' 'message'", 1), 1);

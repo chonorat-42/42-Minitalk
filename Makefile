@@ -6,7 +6,7 @@
 #    By: chonorat <chonorat@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/01 17:56:08 by chonorat          #+#    #+#              #
-#    Updated: 2023/09/25 13:28:38 by chonorat         ###   ########.fr        #
+#    Updated: 2023/09/28 12:12:43 by chonorat         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ NAME = Minitalk
 CC = @cc
 RM = @rm -rf
 OBJS_DIR = @mkdir -p Objects
-CFLAGS = -Wall -Wextra -Werror -ggdb3
+CFLAGS = -Wall -Wextra -Werror
 HEADER = Includes/minitalk.h
 LIBFT = libft/libft.a
 MAKE_LIBFT = @make -C libft

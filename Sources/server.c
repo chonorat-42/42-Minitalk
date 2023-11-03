@@ -6,13 +6,13 @@
 /*   By: chonorat <chonorat@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/14 16:26:56 by chonorat          #+#    #+#             */
-/*   Updated: 2023/09/25 13:21:11 by chonorat         ###   ########.fr       */
+/*   Updated: 2023/09/27 12:05:38 by chonorat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../Includes/minitalk.h"
 
-char *g_str;
+char	*g_str;
 
 static void	get_str(char *c, int *bits, int *end)
 {
